@@ -1,0 +1,13 @@
+prefix=d:/django/venv/Library
+exec_prefix=d:/django/venv/Library
+libdir=d:/django/venv/Library/lib
+sharedlibdir=d:/django/venv/Library/lib
+includedir=d:/django/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
