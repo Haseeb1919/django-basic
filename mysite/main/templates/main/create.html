@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{% block title %}   
+   Create page
+{% endblock %}
+
+{% block content %}
+    <h1>YO YO Create Page</h1>
+    <form method="POST", action="/create/">
+        {{form}}
+        <button type = "submit" , name = "save">create new</button>
+    </form>
+{% endblock %}

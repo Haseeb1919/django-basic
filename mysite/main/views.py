@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Item, TodoList
+from .forms import createnewlist
 
 
 #function to render the home page
@@ -17,6 +18,10 @@ def about(response):
 def contact(response):
     return render(response, "main/contact.html")
 
+#function to render the create page
+def create(response):
+    form = createnewlist()
+    return render(response, "main/create.html", {"form": form})
 
 
 #function to render the todo list page

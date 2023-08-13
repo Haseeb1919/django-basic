@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('<int:id>', include('main.urls')), # new
+    path('create/', include('main.urls')), # new
     path('about/', include('main.urls')), # new
     path('contact/', include('main.urls')), # new
 
